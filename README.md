@@ -1,4 +1,4 @@
-# Bolg
+# Blog
 个人博客
 >链接：https://github.com/JulyXing/Blog/issues
 >
