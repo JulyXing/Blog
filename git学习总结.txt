@@ -1,3 +1,5 @@
+git配置
+ 修改项目下的.git/config配置将url协议从https修改成ssh。
 git 分支的管理
 分支前标记有 * 表示为当前分支
 查看分支
