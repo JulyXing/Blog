@@ -1,3 +1,5 @@
+-- 注：mysql 在根据表字段检索数据时，无视字段名大小写。
+
 -- 查询语句
 select * from user;
 
@@ -15,3 +17,10 @@ select distinct Work_id from work_version;
 select Work_id from work where Work_id not in (select distinct Work_id from work_version);
 
 update work set Status = 'deleted' where Work_id not in (select distinct Work_id from work_version);
+
+-- 分组查询
+select * from resource_tag group by `group`;
+
+select count(*) from resource_tag where `Group`="应急场合";
+
+select `Group`,count(*) from resource_tag group by `group`;
